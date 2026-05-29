@@ -1,12 +1,12 @@
-# [Restricting Sales of Flavored Nicotine Vaping Products: Effects on Nicotine Vaping Product and Cigarette Sales in Canada]
-
-**Status:** [Under Review]  
-**Maintainer:** [Brad Davis]  
-**Last Updated:** [May 2026]
+# Restricting Sales of Flavored Nicotine Vaping Products: Effects on Nicotine Vaping Product and Cigarette Sales in Canada
+**Authors:** Brad Davis, Abigail Friedman, Michael Pesko
+**Status:** Under Review  
+**Maintainer:** Brad Davis, Post Doctoral Scholar, University of Missouri  
+**Last Updated:** May 2026
 
 ## Overview
 
-[1–2 sentences describing what this project is and what research question it addresses.]
+We examine the effects of province level nicotine vaping product (NVP) flavor restrictions on cigarette sales and NVP sales in gas and convenience stores. Using a stacked DID model, we estimate that flavor restrictions increased cigarette sales by 9.6\%. In gas and convenience stores, these restrictions nearly eliminated flavored non-menthol and menthol NVP sales while increasing tobacco and unflavored NVP sales by 123.4\%. Substitution patterns arise in Canada despite its strict tobacco control environment, suggesting that patterns of substitution between e-cigarettes and cigarettes may be generalizable across countries with different tobacco regulatory strengths.
 
 ## Repository Structure
 ├── data/           # Raw and processed data (not committed — see .gitignore)
@@ -17,7 +17,7 @@
 
 ## Requirements
 
-[List the software and packages needed to run this project, e.g., Stata 17, R 4.x, Python 3.x]
+Stata 16.1 or greater
 
 ## How to Run
 
@@ -25,8 +25,10 @@
 
 ## Data Sources
 
-[List the data sources used, where they come from, and any access restrictions.]
+NVP Sales - NielsenIQ
+Cigarette Sales - Health Canada
+Google Trends - Google
 
 ## Contact
 
-[Name] — [email] — Social Impact Lab, University of Missouri
+Brad Davis — badhhh@missouri.edu — Social Impact Lab, University of Missouri
