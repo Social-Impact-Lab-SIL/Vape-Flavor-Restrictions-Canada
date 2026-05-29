@@ -17,11 +17,10 @@ We examine the effects of province level nicotine vaping product (NVP) flavor re
 
 ## Requirements
 
-Stata 16.1 or greater
+Stata 18.1 or greater
 
 ## How to Run
-
-[Step-by-step instructions for running the analysis from scratch.]
+After acquiring data and moving to data folder, run NVP_code.do for cleaning and analysis of NVP sales data. Run Cigarette_code.do for cleaning and analysis of cigarette sales data. 
 
 ## Data Sources
 
