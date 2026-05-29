@@ -3,14 +3,13 @@
 This folder contains the code and instructions to replicate the findings of "Restricting Sales of Flavored Nicotine Vaping Products: Effects on Nicotine Vaping Product and Cigarette Sales in Canada". Currently under review.
 
 ## Data Availability Statement
-- **Raw Data:** NVP sales and cigarette sales are proprietary from NielsenIQ and Health Canada. Google Trends and covariates are provided in thsi repo.
-- **Data Access:** [Provide link to Zenodo/OSF/OneDrive or instructions for requesting access].
+- **Raw Data:** NVP sales and cigarette sales are proprietary from NielsenIQ and Health Canada. Google Trends and covariates are provided in this repo.
+- **Data Access:** For access to NVP and cigarette sales, contact Health Canada.
 - **Note:** If using restricted data, the scripts provided here assume you have placed the raw files in the `/data` folder.
 
 ## Software Requirements
-- **Primary Software:** Stata 16.1 or greater
-- **Required Packages/Libraries:** - Stata: `ssc install reghdfe`, `ssc install ftools`
-  - R: `install.packages(c("tidyverse", "fixest"))`
+- **Primary Software:** Stata 18.1 or greater
+- **Required Packages/Libraries:** - Stata: `ssc install reghdfe`, `ssc install ftools`, `ssc install sdid`, `ssc install sdid_event`
 
 ## Instructions
 1. **Set Directory:** Open `main_file.do` (or `.R`) and update the `global` or `working_directory` path to your local machine.
@@ -27,4 +26,4 @@ This folder contains the code and instructions to replicate the findings of "Res
 | Figure 1 | `03_figures.do` | `figures/map_output.png` |
 
 ## Contact
-For questions regarding this replication package, contact [Name] at [Email].
+For questions regarding this replication package, contact Brad Davis at badhhh@missouri.edu.
