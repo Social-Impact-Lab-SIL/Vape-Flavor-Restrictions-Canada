@@ -1,8 +1,8 @@
-# [Project Title]
+# [Restricting Sales of Flavored Nicotine Vaping Products: Effects on Nicotine Vaping Product and Cigarette Sales in Canada]
 
-**Status:** [Active / Under Review / Published / Archived]  
-**Maintainer:** [Name, SIL role]  
-**Last Updated:** [Month Year]
+**Status:** [Under Review]  
+**Maintainer:** [Brad Davis]  
+**Last Updated:** [May 2026]
 
 ## Overview
 
