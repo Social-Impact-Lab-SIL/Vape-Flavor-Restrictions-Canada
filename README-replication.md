@@ -14,10 +14,10 @@ This folder contains the code and instructions to replicate the findings of "Res
 ## Instructions
 1. **Set Directory:** Open `main_file.do` (or `.R`) and update the `global` or `working_directory` path to your local machine.
 2. **Run Analysis:** Execute the scripts in the following order:
-   - `01_clean_data.do`
-   - `02_analysis.do`
+   - `NVP_Code.do`
+   - `Cigarette_Code.do`
    - `03_generate_figures.do`
-3. **Estimated Run Time:** [e.g., 5 minutes / 2 hours]
+3. **Estimated Run Time:** 2 hours
 
 ## List of Tables and Figures
 | Exhibit | Script | Output File |
