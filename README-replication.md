@@ -22,7 +22,7 @@ This folder contains the code and instructions to replicate the findings of "Res
 ## List of Tables and Figures
 | Exhibit | Script | Output File |
 | :--- | :--- | :--- |
-| Figure 1a- 1d | `NVP_Code.do` lines 937-1115 | `tables/table1.tex` |
+| Figure 1a- 1d | `NVP_Code.do` lines 937-1115 | `Figure_1a_Log_Units` `Figure_1d_Log_Units_Mint.pdf` |
 | Figure 1 | `03_figures.do` | `figures/map_output.png` |
 
 ## Contact
