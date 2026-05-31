@@ -16,7 +16,6 @@ This folder contains the code and instructions to replicate the findings of "Res
 2. **Run Analysis:** Execute the scripts in the following order:
    - `NVP_Code.do`
    - `Cigarette_Code.do`
-   - `03_generate_figures.do`
 3. **Estimated Run Time:** 2 hours
 
 ## List of Tables and Figures
