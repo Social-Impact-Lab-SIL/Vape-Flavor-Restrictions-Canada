@@ -1022,7 +1022,7 @@ sum units_tob_unflav_per_capita if ttt<0 & ttt>-13
 sum units_mint_per_capita if ttt<0 & ttt>-13
 
 
-**************Figure 1b*******************
+**************Figure 1a*******************
 reghdfe log_units_per_capita ecig_flavor cig_tax ENDSTax_Perc ENDSTax_PerML ecig_nicotine trade_bubble UnEmp CvdDeathsPC InternalMvmtRestrictions NonEssRetRestrictions [aw = stack_weight], cluster(panel_id) absorb(i.sub_exp#i.province_dum i.sub_exp#i.event_time)
 
 local att1 = e(b)[1,1]
@@ -1041,9 +1041,9 @@ matrix A = reg1[1..2 , colnumb(reg1,"1.treat#1._Ievent_tim_1")], reg1[1..2 , col
 mat colnames A = "-21""-20""-19""-18""-17""-16""-15""-14""-13""-12""-11""-10""-9""-8" "-7" "-6" "-5" "-4" "-3" "-2" "-1" "0" "1" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12" "13" "14" "15" "16" "17" "18" "19" "20" "21"
 coefplot matrix(A), se(A[2]) vertical yline(0) xline(21.5) ylabel(-1(0.5)1.5) xtitle("Months to Flavor Restriction") ytitle("Estimated Coefficient") graphregion(color(white)) xlabel(2 "-20" 7 "-15" 12 "-10" 17 "-5" 22 "0" 27 "5" 32 "10" 37 "15" 42 "20") note("ATT: {&beta}(SE) = `att2'(`se2')", pos(6) size(12pt))
 
-graph export "Output\Stacked_Log_Units.pdf", as(pdf) name("Graph") replace
+graph export "Output\Figure_1a_Log_Units.pdf", as(pdf) name("Graph") replace
 
-**************Figure 1c*******************
+**************Figure 1b*******************
 reghdfe log_units_tob_unflav_per_capita ecig_flavor cig_tax ENDSTax_Perc ENDSTax_PerML ecig_nicotine trade_bubble UnEmp CvdDeathsPC InternalMvmtRestrictions NonEssRetRestrictions [aw = stack_weight], cluster(panel_id) absorb(i.sub_exp#i.province_dum i.sub_exp#i.event_time)
 
 
@@ -1070,9 +1070,9 @@ xlincom ((1.treat#1._Ievent_tim_22+ 1.treat#1._Ievent_tim_23 + 1.treat#1._Ievent
 
 mat colnames A = "-21""-20""-19""-18""-17""-16""-15""-14""-13""-12""-11""-10""-9""-8" "-7" "-6" "-5" "-4" "-3" "-2" "-1" "0" "1" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12" "13" "14" "15" "16" "17" "18" "19" "20" "21"
 coefplot matrix(A), se(A[2]) vertical yline(0) xline(21.5) ylabel(-1(0.5)1.5) xtitle("Months to Flavor Restriction") ytitle("Estimated Coefficient") graphregion(color(white)) xlabel(2 "-20" 7 "-15" 12 "-10" 17 "-5" 22 "0" 27 "5" 32 "10" 37 "15" 42 "20") note("ATT: {&beta}(SE) = `att2'*(`se2')", pos(6) size(12pt))
-graph export "Output\Stacked_Log_Units_Tobacco_Unflavored.pdf", as(pdf) name("Graph") replace
+graph export "Output\Figure_1b_Log_Units_Tobacco_Unflavored.pdf", as(pdf) name("Graph") replace
 
-**************Figure 1d*******************
+**************Figure 1c*******************
 reghdfe log_units_flavored_per_capita ecig_flavor cig_tax ENDSTax_Perc ENDSTax_PerML ecig_nicotine trade_bubble UnEmp CvdDeathsPC InternalMvmtRestrictions NonEssRetRestrictions [aw = stack_weight], cluster(panel_id) absorb(i.sub_exp#i.province_dum i.sub_exp#i.event_time)
 
 local att1 = e(b)[1,1]
@@ -1091,9 +1091,9 @@ matrix A = reg1[1..2 , colnumb(reg1,"1.treat#1._Ievent_tim_1")], reg1[1..2 , col
 *name the columns so they look correct on the x-axis
 mat colnames A = "-21""-20""-19""-18""-17""-16""-15""-14""-13""-12""-11""-10""-9""-8" "-7" "-6" "-5" "-4" "-3" "-2" "-1" "0" "1" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12" "13" "14" "15" "16" "17" "18" "19" "20" "21"
 coefplot matrix(A), se(A[2]) vertical yline(0) xline(21.5) ylabel(-15(5)5) xtitle("Months to Flavor Restriction") ytitle("Estimated Coefficient") graphregion(color(white)) xlabel(2 "-20" 7 "-15" 12 "-10" 17 "-5" 22 "0" 27 "5" 32 "10" 37 "15" 42 "20") note("ATT: {&beta}(SE) = `att2'***(`se2')", pos(6) size(12pt))
-graph export "Output\Stacked_Log_Units_Flavored.pdf", as(pdf) name("Graph") replace
+graph export "Output\Figure_1c_Log_Units_Flavored.pdf", as(pdf) name("Graph") replace
 
-**************Figure 1e*******************
+**************Figure 1d*******************
 reghdfe log_units_mint_per_capita ecig_flavor cig_tax ENDSTax_Perc ENDSTax_PerML ecig_nicotine trade_bubble UnEmp CvdDeathsPC InternalMvmtRestrictions NonEssRetRestrictions [aw = stack_weight], cluster(panel_id) absorb(i.sub_exp#i.province_dum i.sub_exp#i.event_time)
 
 local att1 = e(b)[1,1]
@@ -1112,7 +1112,7 @@ matrix A = reg1[1..2 , colnumb(reg1,"1.treat#1._Ievent_tim_1")], reg1[1..2 , col
 *name the columns so they look correct on the x-axis
 mat colnames A = "-21""-20""-19""-18""-17""-16""-15""-14""-13""-12""-11""-10""-9""-8" "-7" "-6" "-5" "-4" "-3" "-2" "-1" "0" "1" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12" "13" "14" "15" "16" "17" "18" "19" "20" "21"
 coefplot matrix(A), se(A[2]) vertical yline(0) xline(21.5) ylabel(-15(5)5) xtitle("Months to Flavor Restriction") ytitle("Estimated Coefficient") graphregion(color(white)) xlabel(2 "-20" 7 "-15" 12 "-10" 17 "-5" 22 "0" 27 "5" 32 "10" 37 "15" 42 "20") note("ATT: {&beta}(SE) = `att2'*(`se2')", pos(6) size(12pt))
-graph export "Output\Stacked_Log_Units_Mint.pdf", as(pdf) name("Graph") replace
+graph export "Output\Figure_1d_Log_Units_Mint.pdf", as(pdf) name("Graph") replace
 
 
 **********************Table 2 Column 1-4: E-Cigarette Results************************
@@ -1132,7 +1132,7 @@ est store results1_12
 eststo: reghdfe log_units_mint_per_capita ecig_flavor cig_tax ENDSTax_Perc ENDSTax_PerML ecig_nicotine trade_bubble CvdDeathsPC InternalMvmtRestrictions NonEssRetRestrictions  UnEmp [aw = stack_weight], cluster(panel_id) absorb(i.sub_exp#i.province_dum i.sub_exp#i.event_time)
 est store results1_16
 
-esttab results1_* using "Output\e_cig_results.html", replace html label brackets cells(b(fmt(3) star) se(fmt(3) par)) stats(N , labels("N") fmt(%9.0fc %4.3f  ))  alignment(center) star(* 0.1 ** 0.05 *** 0.01) keep(ecig_flavor)
+esttab results1_* using "Output\Table_2_e_cig_results.html", replace html label brackets cells(b(fmt(3) star) se(fmt(3) par)) stats(N , labels("N") fmt(%9.0fc %4.3f  ))  alignment(center) star(* 0.1 ** 0.05 *** 0.01) keep(ecig_flavor)
 
 replace event_time= event_time + 22
 
@@ -1475,7 +1475,7 @@ foreach y of local outcomes {
         ytitle("Frequency") ///
 		note("Red line - actual coefficient (se): `: di %5.3f `actual_b'' (`: di %5.3f `actual_s'')" ///
      "RI-beta one-tailed p-value: `: di %5.3f `pval_b''", size(medium))
-graph save "Output\placebo_beta_`y'.gph", replace
+graph save "Output\Figure_2_placebo_beta_`y'.gph", replace
     
 
     twoway (histogram tstat, frequency fcolor(maroon%40) lcolor(maroon)), ///
@@ -1649,7 +1649,7 @@ legend(order(1 "ln(NVP Unit Sales/Capita)" 3 "ln(Cigarette Sales/Capita)") ///
        position(6) cols(2) region(style(none))) ///
 graphregion(margin(0 2 2 0))
 
-graph export "Output\Point_Estimates_Sales_log.pdf", as(pdf) name("Graph") replace
+graph export "Output\Figure_3a_Point_Estimates_Sales_log.pdf", as(pdf) name("Graph") replace
 
 
 *************Figure 3b: Stacked DD Point Estimates*************
@@ -1848,7 +1848,7 @@ xscale(range(0 12)) ///
 legend(order(1 "ln(Flavored Non-Mentholated Units/Capita)" 3 "ln(Mentholated Units/Capita)" 5 "ln(Tobacco & Unflavored Units/Capita)") ///
        position(6) cols(1) region(style(none))) ///
 graphregion(margin(0 2 2 0))
-graph export "Output\Stacked_Point_Estimates_Flavors.pdf", as(pdf) name("Graph") replace
+graph export "Output\Figure_3b_Stacked_Point_Estimates_Flavors.pdf", as(pdf) name("Graph") replace
 
 ****************Figure 4a Stacked DD Point Estimates by Province**************************
 use analytic.dta, replace 
@@ -2021,7 +2021,7 @@ scale(1.2) ///
 legend(order(1 "ln(NVP Unit Sales/Capita)" 3 "ln(Cigarette Sales/Capita)" ) ///
        position(6) cols(4) region(style(none))) ///
 graphregion(margin(0 2 2 0))
-graph export "Output\Point_Estimates_log_Province.pdf", as(pdf) name("Graph") replace
+graph export "Output\Figure_4a_Point_Estimates_By_Province.pdf", as(pdf) name("Graph") replace
 
 
 ****************Figure 4b Stacked DD Point Estimates by Province**************************
@@ -2235,7 +2235,7 @@ legend(order(1 "ln(Flavored Non-Mentholated Units/Capita)" 3 "ln(Mentholated Uni
        position(6) cols(1) region(style(none))) ///
 graphregion(margin(0 2 2 0))
 
-graph export "Output\Stacked_Point_Estimates_Flavors_By_Province.pdf", as(pdf) name("Graph") replace
+graph export "Output\Figure_4b_Stacked_Point_Estimates_Flavors_By_Province.pdf", as(pdf) name("Graph") replace
 
 
 
@@ -2351,7 +2351,7 @@ mat colnames A = "-21""-20""-19""-18""-17""-16""-15""-14""-13""-12""-11""-10""-9
 *generate and save the event study
 coefplot matrix(A), se(A[2]) vertical yline(0) xline(21.5) ylabel(-1(0.5)1.5) xtitle("Months to Flavor Restriction") ytitle("Estimated Coefficient") graphregion(color(white)) xlabel( 2 "-20" 7 "-15" 12 "-10" 17 "-5" 22 "0" 27 "5" 32 "10" 37 "15" 42 "20") note("ATT: {&beta}(SE) = `att2'**(`se2')", pos(6) size(12pt))
 
-graph export "Output\Stacked_Log_Shopping.pdf", as(pdf) name("Graph") replace
+graph export "Output\Figure_6a_Stacked_Log_Shopping.pdf", as(pdf) name("Graph") replace
 
 reghdfe log_interest ecig_flavor cig_tax ENDSTax_Perc ENDSTax_PerML ecig_nicotine trade_bubble UnEmp CvdDeathsPC InternalMvmtRestrictions NonEssRetRestrictions [aw = stack_weight], cluster(panel_id) absorb(i.sub_exp#i.province_dum i.sub_exp#i.event_time)
 
@@ -2374,7 +2374,7 @@ mat colnames A = "-21""-20""-19""-18""-17""-16""-15""-14""-13""-12""-11""-10""-9
 
 *generate and save the event study
 coefplot matrix(A), se(A[2]) vertical yline(0) xline(21.5) ylabel(-1(0.5)1.5) xtitle("Months to Flavor Restriction") ytitle("Estimated Coefficient") graphregion(color(white)) xlabel( 2 "-20" 7 "-15" 12 "-10" 17 "-5" 22 "0" 27 "5" 32 "10" 37 "15" 42 "20") note("ATT: {&beta}(SE) = `att2'(`se2')", pos(6) size(12pt))
-graph export "Output\Stacked_Log_interest.pdf", as(pdf) name("Graph") replace
+graph export "Output\Figure_6b_Stacked_Log_interest.pdf", as(pdf) name("Graph") replace
 
 
 ******************Table 1: E-Cigarette Summary Statistics********************
@@ -2438,7 +2438,7 @@ eststo pre_control: estpost summarize shopping interest if treatment == 0 & Firs
 eststo post_control: estpost summarize shopping interest if treatment == 0  & Last12M ==1 
 eststo pre_treated: estpost summarize shopping interest if treatment == 1  & First12M == 1
 eststo post_treated: estpost summarize shopping interest if treatment == 1  &  Last12M ==1 
-esttab full pre_control post_control pre_treated post_treated using "Output\google_summary_stats.html", ///
+esttab full pre_control post_control pre_treated post_treated using "Output\summary_stats_google.html", ///
     replace html ///
     cells("mean(fmt(1)) sd(fmt(1)) N(fmt(0))") ///
     label
