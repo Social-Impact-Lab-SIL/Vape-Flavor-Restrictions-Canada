@@ -24,8 +24,8 @@ After acquiring data and moving to data folder, run NVP_code.do for cleaning and
 
 ## Data Sources
 
-NVP Sales - NielsenIQ
-Cigarette Sales - Health Canada
+NVP Sales - NielsenIQ,
+Cigarette Sales - Health Canada,
 Google Trends - Google
 
 ## Contact
