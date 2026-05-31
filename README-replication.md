@@ -27,6 +27,6 @@ This folder contains the code and instructions to replicate the findings of "Res
 |Figure 3|`NVP_Code.do` lines 1498-1851| `Figure_3a_Point_Estimates_Sales_log.pdf` `Figure_3b_Stacked_Point_Estimates_Flavors.pdf` |
 |Figure 4|`NVP_Code.do` lines 1853-2238 | `Figure_4a_Point_Estimates_By_Province.pdf` `Figure_4b_Stacked_Point_Estimates_Flavors_By_Province.pdf`|
 |Figure 6|`NVP_Code.do` lines 2243-2377 | `Figure_6a_Stacked_Log_Shopping.pdf` `Figure_6b_Stacked_Log_interest.pdf`|
-|Table 1|`NVP_Code.do` lines 2380-2450 | `summary_stats_NVPS.html` `google_summary_stats.html`
+|Table 1|`NVP_Code.do` lines 2380-2450 | `summary_stats_NVPS.html` `summary_stats_google.html`
 ## Contact
 For questions regarding this replication package, contact Brad Davis at badhhh@missouri.edu.
