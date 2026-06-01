@@ -1,4 +1,4 @@
-# Replication Package: [Insert Project Title]
+# Replication Package: Restricting Sales of Flavored Nicotine Vaping Products: Effects on Nicotine Vaping Product and Cigarette Sales in Canada
 
 This folder contains the code and instructions to replicate the findings of "Restricting Sales of Flavored Nicotine Vaping Products: Effects on Nicotine Vaping Product and Cigarette Sales in Canada". Currently under review.
 
