@@ -28,7 +28,7 @@ This folder contains the code and instructions to replicate the findings of "Res
 |Figure 6|`NVP_Code.do` lines 2243-2377 | `Figure_6a_Stacked_Log_Shopping.pdf` `Figure_6b_Stacked_Log_interest.pdf`|
 |Table 1|`NVP_Code.do` lines 2380-2450 | `summary_stats_NVPS.html` `summary_stats_google.html`|
 |Table 3|`NVP_Code.do` lines 2453-2578| |
-|Figures A2|`NVP_Code.do` lines 2582-2603| `Sales_Trends_Units.pdf` `Sales_Trends_Units_Flavored.pdf` `Sales_Trends_Units_Tobacco_Unflavored.pdf` `Sales_Trends_Units_Mint.pdf`|
+|Figures A1|`NVP_Code.do` lines 2582-2603| `Sales_Trends_Units.pdf` `Sales_Trends_Units_Flavored.pdf` `Sales_Trends_Units_Tobacco_Unflavored.pdf` `Sales_Trends_Units_Mint.pdf`|
 |Figures 1e & 5a|`Cigarette_Code.do` lines 639-748| `Figure_1e_Stacked_Log_Cigarettes.pdf` `Figure_5a_Stacked_Log_Cigarettes.pdf`|
 |Figure 5b|`Cigarette_Code.do` lines 982-1025|`Figure_5b_TWFE_Log_Cigarettes.pdf`|
 |Figure 5c|`Cigarette_Code.do` lines 1028-1071|`Figure_5c_SDID_Log_Cigarettes.pdf`|
