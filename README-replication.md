@@ -26,14 +26,14 @@ This folder contains the code and instructions to replicate the findings of "Res
 |Figure 3|`NVP_Code.do` lines 1498-1851| `Figure_3a_Point_Estimates_Sales_log.pdf` `Figure_3b_Stacked_Point_Estimates_Flavors.pdf` |
 |Figure 4|`NVP_Code.do` lines 1853-2238 `Cigarette_Code.do` lines 881-979 | `Figure_4a_Point_Estimates_By_Province.pdf` `Figure_4b_Stacked_Point_Estimates_Flavors_By_Province.pdf`|
 |Figure 6|`NVP_Code.do` lines 2243-2377 | `Figure_6a_Stacked_Log_Shopping.pdf` `Figure_6b_Stacked_Log_interest.pdf`|
-|Table 1|`NVP_Code.do` lines 2380-2450 | `summary_stats_NVPS.html` `summary_stats_google.html`|
+|Table 1|`NVP_Code.do` lines 2380-2450 `Cigarette_Code.do` lines 1075-1094 | `summary_stats_NVPS.html` `summary_stats_google.html` `summary_stats_cigarettes.html`|
 |Table 3|`NVP_Code.do` lines 2453-2578| |
 |Figures A1|`NVP_Code.do` lines 2582-2603| `Sales_Trends_Units.pdf` `Sales_Trends_Units_Flavored.pdf` `Sales_Trends_Units_Tobacco_Unflavored.pdf` `Sales_Trends_Units_Mint.pdf`|
 |Figures 1e & 5a|`Cigarette_Code.do` lines 639-748| `Figure_1e_Stacked_Log_Cigarettes.pdf` `Figure_5a_Stacked_Log_Cigarettes.pdf`|
 |Figure 5b|`Cigarette_Code.do` lines 982-1025|`Figure_5b_TWFE_Log_Cigarettes.pdf`|
 |Figure 5c|`Cigarette_Code.do` lines 1028-1071|`Figure_5c_SDID_Log_Cigarettes.pdf`|
 |Figure 5d|`Cigarette_Code.do` lines 751-775|`Figure_5d_Stacked_Cigarettes.pdf`|
-|Figure A2|`Cigarette_Code.do` lines 751-775|`Figure_A2_Sales_Trends_Cigarettes.pdf`|
+|Figure A2|`Cigarette_Code.do` lines 1098-1113|`Figure_A2_Sales_Trends_Cigarettes.pdf`|
 
 
 
