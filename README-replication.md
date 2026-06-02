@@ -33,6 +33,7 @@ This folder contains the code and instructions to replicate the findings of "Res
 |Figure 5b|`Cigarette_Code.do` lines 982-1025|`Figure_5b_TWFE_Log_Cigarettes.pdf`|
 |Figure 5c|`Cigarette_Code.do` lines 1028-1071|`Figure_5c_SDID_Log_Cigarettes.pdf`|
 |Figure 5d|`Cigarette_Code.do` lines 751-775|`Figure_5d_Stacked_Cigarettes.pdf`|
+|Figure 6a & 6b|`NVP_Code.do` lines 2241-2376|`Figure_6a_Stacked_Log_Shopping.pdf``Figure_6b_Stacked_Log_interest.pdf`|
 |Figure A2|`Cigarette_Code.do` lines 1098-1113|`Figure_A2_Sales_Trends_Cigarettes.pdf`|
 
 
