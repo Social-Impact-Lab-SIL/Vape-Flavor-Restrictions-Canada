@@ -1,10 +1,5 @@
-* Consolidated Canada flavor-restrictions do-file
-* Analyses are ordered as Figures 1-5, Tables 1-3, then Appendix A1-A5 and A2.
-* July 1, 2022 populations throughout; cigarette and Google Trends share covariates.
-* Newfoundland and Labrador is NL in all analytic datasets.
-* Run from the original project directory; original Data, temp, and Output paths are unchanged.
 capture log close
-log using "Flavor_Restriction_Combined2.log", replace text
+log using "Flavor_Restriction_Combined.log", replace text
 
 *===============================================================
 * 1. Cigarette data preparation
